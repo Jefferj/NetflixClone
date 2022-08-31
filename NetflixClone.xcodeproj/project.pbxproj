@@ -11,6 +11,7 @@
 		61A7E3AB28BEBA7D00A0FC1D /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E3AA28BEBA7D00A0FC1D /* UpcomingViewController.swift */; };
 		61A7E3AD28BEBAD300A0FC1D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E3AC28BEBAD300A0FC1D /* SearchViewController.swift */; };
 		61A7E3AF28BEBAEE00A0FC1D /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E3AE28BEBAEE00A0FC1D /* DownloadsViewController.swift */; };
+		61AC505228C00CC300233D7B /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AC505128C00CC300233D7B /* CollectionViewTableViewCell.swift */; };
 		61CE0B4628BD521A0039564F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE0B4528BD521A0039564F /* AppDelegate.swift */; };
 		61CE0B4828BD521A0039564F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE0B4728BD521A0039564F /* SceneDelegate.swift */; };
 		61CE0B4A28BD521A0039564F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE0B4928BD521A0039564F /* MainTabBarViewController.swift */; };
@@ -23,6 +24,7 @@
 		61A7E3AA28BEBA7D00A0FC1D /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		61A7E3AC28BEBAD300A0FC1D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		61A7E3AE28BEBAEE00A0FC1D /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		61AC505128C00CC300233D7B /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		61CE0B4228BD521A0039564F /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CE0B4528BD521A0039564F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61CE0B4728BD521A0039564F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,42 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		61AC504C28C00C0700233D7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61AC504D28C00C1000233D7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		61AC504E28C00C1D00233D7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61AC505128C00CC300233D7B /* CollectionViewTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61AC504F28C00C5400233D7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61AC505028C00C5C00233D7B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		61CE0B3928BD521A0039564F = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +111,11 @@
 		61CE0B4428BD521A0039564F /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				61AC505028C00C5C00233D7B /* Managers */,
+				61AC504F28C00C5400233D7B /* Resources */,
+				61AC504C28C00C0700233D7B /* Models */,
+				61AC504E28C00C1D00233D7B /* View */,
+				61AC504D28C00C1000233D7B /* ViewModels */,
 				61A7E3A728BEBA1C00A0FC1D /* Controllers */,
 				61CE0B4528BD521A0039564F /* AppDelegate.swift */,
 				61CE0B4728BD521A0039564F /* SceneDelegate.swift */,
@@ -156,6 +199,7 @@
 			files = (
 				61A7E3AD28BEBAD300A0FC1D /* SearchViewController.swift in Sources */,
 				61CE0B4A28BD521A0039564F /* MainTabBarViewController.swift in Sources */,
+				61AC505228C00CC300233D7B /* CollectionViewTableViewCell.swift in Sources */,
 				61A7E3AF28BEBAEE00A0FC1D /* DownloadsViewController.swift in Sources */,
 				61CE0B4628BD521A0039564F /* AppDelegate.swift in Sources */,
 				61CE0B4828BD521A0039564F /* SceneDelegate.swift in Sources */,
