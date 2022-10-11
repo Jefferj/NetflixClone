@@ -2,16 +2,16 @@
 //  CollectionViewTableViewCell.swift
 //  NetflixClone
 //
-//  Created by Jefferson Naranjo rodríguez on 31/08/22.
+//  Created by Jefferson Naranjo rodríguez on 11/10/22.
 //
 
 import UIKit
 
 class CollectionViewTableViewCell: UITableViewCell {
-
-   static let identifier = "CollectionViewTableViewCell"
     
-    private let collectionView : UICollectionView = {
+    static let identifier = "CollectionViewTableViewCell"
+    
+    private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)
         layout.scrollDirection = .horizontal
@@ -27,10 +27,9 @@ class CollectionViewTableViewCell: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
     }
     
-    required init(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         fatalError()
     }
     
@@ -38,17 +37,17 @@ class CollectionViewTableViewCell: UITableViewCell {
         super.layoutSubviews()
         collectionView.frame = contentView.bounds
     }
-
 }
 
 extension CollectionViewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .green
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 10
+        return 10
     }
 }

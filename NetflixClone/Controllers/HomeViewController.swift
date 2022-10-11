@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  NetflixClone
 //
-//  Created by Jefferson Naranjo rodríguez on 30/08/22.
+//  Created by Jefferson Naranjo rodríguez on 11/10/22.
 //
 
 import UIKit
@@ -17,23 +17,20 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
         view.addSubview(homeFeedTable)
         
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
-        
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
     }
-
 }
 
-extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 20
