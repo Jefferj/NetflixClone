@@ -17,6 +17,7 @@
 		61CE0B4A28BD521A0039564F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE0B4928BD521A0039564F /* MainTabBarViewController.swift */; };
 		61CE0B4F28BD52230039564F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CE0B4E28BD52230039564F /* Assets.xcassets */; };
 		61CE0B5228BD52230039564F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61CE0B5028BD52230039564F /* LaunchScreen.storyboard */; };
+		61F83CDC28F8A6E600834B4D /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F83CDB28F8A6E600834B4D /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		61CE0B4E28BD52230039564F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61CE0B5128BD52230039564F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61CE0B5328BD52230039564F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F83CDB28F8A6E600834B4D /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				6177AF7128F61FC7007A7477 /* CollectionViewTableViewCell.swift */,
+				61F83CDB28F8A6E600834B4D /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				61CE0B4A28BD521A0039564F /* MainTabBarViewController.swift in Sources */,
 				6177AF6B28F613B8007A7477 /* SearchViewController.swift in Sources */,
 				6177AF7228F61FC7007A7477 /* CollectionViewTableViewCell.swift in Sources */,
+				61F83CDC28F8A6E600834B4D /* HeroHeaderUIView.swift in Sources */,
 				61CE0B4628BD521A0039564F /* AppDelegate.swift in Sources */,
 				6177AF6928F61339007A7477 /* DownloadsViewController.swift in Sources */,
 				61CE0B4828BD521A0039564F /* SceneDelegate.swift in Sources */,
