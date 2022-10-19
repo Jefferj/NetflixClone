@@ -46,7 +46,7 @@ extension SearchResultsViewController : UICollectionViewDelegate, UICollectionVi
             return UICollectionViewCell()
         }
         let titles = titles[indexPath.row]
-        cell.configure(with: titles.poster_path ?? "Uknown")
+        cell.configure(with: titles.poster_path ?? "")
         return cell
     }
 }

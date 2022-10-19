@@ -52,17 +52,34 @@ class CollectionViewTableViewCell: UITableViewCell {
 extension CollectionViewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.identifier, for: indexPath) as? TitleCollectionViewCell else {
-            return UICollectionViewCell()
+
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.identifier, for: indexPath) as? TitleCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            
+            guard let model = titles[indexPath.row].poster_path else {
+                return UICollectionViewCell()
+            }
+            cell.configure(with: model)
+            
+            return cell
         }
-        guard let model = titles[indexPath.row].poster_path else {
-            return UICollectionViewCell()
-        }
-        cell.configure(with: model)
-        return cell
-    }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titles.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let title = titles[indexPath.row]
+        guard let titleName = title.original_title ?? title.original_name else { return }
+        
+        APICaller.shared.getMovie(with: titleName + "Trailer") { result in
+            switch result {
+            case .success(let videoElement):
+                print(videoElement.id)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
